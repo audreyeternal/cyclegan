@@ -1,0 +1,22 @@
+# CycleGAN run configs. Any settings added to this file will override the default configs
+
+nature_image:
+  train: 
+    batch_size: 1
+    input_ch: 1 #2021-4-21
+    input_nc: 1 #2021-4-21 in the discriminator
+    dataset_type: nature_image
+    a_dir: "data/nature_image/train/artifact"  # path to your train artifact dataset
+    b_dir: "data/nature_image/train/no_artifact" # path to your train no_artifact dataset
+  test:
+    batch_size: 2
+    input_ch: 1
+    input_nc: 1
+    dataset_type: nature_image
+    a_dir: "data/nature_image/test/artifact" # path to your test artifact dataset
+    b_dir: "data/nature_image/test/no_artifact" # path to your test no_artifact dataset
+    random_flip: False
+    crop_type: center
+    metrics_step: 1
+
+    

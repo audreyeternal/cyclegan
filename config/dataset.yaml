@@ -1,0 +1,5 @@
+nature_image:
+  raw_dir: data/nature_image/raw # path to the original (unzipped) spineweb data
+  dataset_dir: data/nature_image # path to the prepared spineweb data
+  image_size: 256 # output image size
+  num_tests: 100 # min number of images for testing
